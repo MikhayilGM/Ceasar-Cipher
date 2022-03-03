@@ -112,13 +112,13 @@ void Caesar::encryption()
     {
         std::string tmp_input;
         std::string tmp_output;
-        fin >> tmp_input;
+        getline(fin, tmp_input);
         for(int i = 0; i < tmp_input.size(); ++i)
         { 
             tmp_output[i] = Caesar::sym_enc(tmp_input[i]);
             fout << tmp_output[i];
         }
-        fout << " ";
+        fout << "\n";
     }
 }
 
@@ -139,13 +139,13 @@ void Caesar::dencryption()
     {
         std::string tmp_input;
         std::string tmp_output;
-        fin >> tmp_input;
+        getline(fin, tmp_input);
         for(int i = 0; i < tmp_input.size(); ++i)
         { 
             tmp_output[i] = Caesar::sym_denc(tmp_input[i]);
             fout << tmp_output[i];
         }
-        fout << " ";
+        fout << "\n";
     }
 }
 
