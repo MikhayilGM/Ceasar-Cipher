@@ -1,17 +1,18 @@
-#include <fstream>
-
 #ifndef __CAESAR_H___
 #define __CAESAR_H___
 
+#include <fstream>
 
 class Caesar
 {
+    private:
+        void dencryption();
+        void encryption();
     public:
         void set_encfname(std::string);
         void set_dencfname(std::string);
         void set_enc_num(int);
-        void dencryption();
-        void encryption();
+    
     private:
         char sym_enc(char);
         char sym_denc(char);
